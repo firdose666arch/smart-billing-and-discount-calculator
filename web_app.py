@@ -1,4 +1,4 @@
-from flask import Flask, render_template_string, request
+from flask import Flask, render_template_string, request , redirect
 from invoice import generate_invoice
 
 app = Flask(__name__)
@@ -67,7 +67,7 @@ HTML = """
 </html>
 """
 
-@app.route("/", methods=["GET", "POST"])
+@app.route("/calculator", methods=["GET", "POST"])
 def home():
     result = None
 
@@ -116,6 +116,10 @@ def download_invoice():
         as_attachment=True,
         download_name=f"{invoice_number}.pdf"
     )
+@app.route("/")
+def index():
+    return redirect("/invoice")
+
 @app.route("/invoice")
 def invoice_page():
     return render_template_string("""
