@@ -214,7 +214,7 @@ def page(title, content, active):
 def index():
     content = """
     <div class="panel">
-        <h2>Welcome to Midnight Pro ✨</h2>
+        <h2>Welcome to Smart billing calculator✨</h2>
         <p class="muted">
             Manage your billing, discounts and professional GST invoices
             from one beautiful workspace.
