@@ -178,7 +178,7 @@ SHELL = """
 <body>
 <div class="layout">
     <aside class="sidebar">
-        <div class="brand">✦ MIDNIGHT PRO</div>
+        <div class="brand">✦ BILLCRAFT </div>
         <a class="nav {{ 'active' if active == 'home' else '' }}" href="/">▦ Dashboard</a>
         <a class="nav {{ 'active' if active == 'calculator' else '' }}" href="/calculator">▣ Smart Billing</a>
         <a class="nav {{ 'active' if active == 'invoice' else '' }}" href="/invoice">▤ GST Invoice</a>
