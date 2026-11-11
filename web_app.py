@@ -182,7 +182,6 @@ SHELL = """
         <a class="nav {{ 'active' if active == 'home' else '' }}" href="/">▦ Dashboard</a>
         <a class="nav {{ 'active' if active == 'calculator' else '' }}" href="/calculator">▣ Smart Billing</a>
         <a class="nav {{ 'active' if active == 'invoice' else '' }}" href="/invoice">▤ GST Invoice</a>
-        <div class="nav muted">✧ Billing Suite</div>
     </aside>
 
     <main class="main">
